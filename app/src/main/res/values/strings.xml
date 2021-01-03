@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">lab3</string>
+    <string name="no_sensor">No sensor error</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="x">X:</string>
+    <string name="y">Y:</string>
+    <string name="orientation">Orientation: </string>
+    <string name="z">Z:</string>
+    <string name="Latitude_text">Latitude</string>
+    <string name="Longitude_text">Longitude</string>
+    <string name="Coordinates_text">Coordinates</string>
+    <string name="Coordinates_Mobile_text">Coordinates(Mobile)</string>
+    <string name="Coordinates_GPS_text">Coordinates(GPS)</string>
+    <string name="Take_photo_text">Take Photo</string>
+</resources>

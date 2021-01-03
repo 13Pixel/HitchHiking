@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:padding="10dp">
+
+            <TextView
+                android:text="@string/x"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                />
+
+            <TextView
+                android:id="@+id/x_value"
+                android:text="-"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+        </TableRow>
+
+        <TableRow
+            android:padding="10dp">
+
+            <TextView
+                android:text="@string/y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                />
+            <TextView
+                android:id="@+id/y_value"
+                android:text="-"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+        </TableRow>
+
+        <TableRow
+            android:padding="10dp">
+
+            <TextView
+                android:text="@string/z"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                />
+            <TextView
+                android:id="@+id/z_value"
+                android:text="-"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+        </TableRow>
+        <TableRow
+            android:padding="10dp">
+
+            <TextView
+                android:text="@string/orientation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                />
+            <TextView
+                android:id="@+id/orientation_val"
+                android:text="-"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+        </TableRow>
+        <TableRow
+        android:padding="10dp">
+
+        <TextView
+            android:text="@string/Coordinates_Mobile_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="5dp"
+            android:paddingRight="5dp"
+            />
+        <TextView
+            android:id="@+id/coordinates"
+            android:text="-"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+    </TableRow>
+        <TableRow
+            android:padding="10dp">
+
+            <TextView
+                android:text="@string/Coordinates_GPS_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                />
+            <TextView
+                android:id="@+id/coordinatesgps"
+                android:text="-"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+        </TableRow>
+        <TableRow>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/start_and_stop"
+            android:text="@string/start"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/take_photo"
+            android:text="@string/Take_photo_text"/>
+
+
+         </TableRow>
+        <TextView
+            android:id="@+id/tvHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Heading: 0.0" />
+
+        <ImageView
+            android:id="@+id/imageViewCompass"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tvHeading"
+            android:layout_centerHorizontal="true"
+
+            android:src="@drawable/img_compass" />
+        <TableRow>
+        </TableRow>
+</TableLayout>
+
+
+
+
+    <FrameLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+        <TextureView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textureView"/>
+
+
+    </FrameLayout>
+</LinearLayout>
